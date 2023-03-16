@@ -26,7 +26,6 @@ const RelatedSongs = ({
     )
       .then((response) => response.json())
       .then((response) => {
-        console.log(response);
         setSongs(response.tracks.hits);
       })
       .catch((err) => console.error(err));
